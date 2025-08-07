@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+ <head>
+    <title>Button</title>
+</head>
+<body>
+    <button id="Followbtn" style="margin: 50px; padding-left: 20px; padding-right: 20px; padding-bottom: 10px; padding-top: 10px; color: white; background-color: rgb(216, 46, 88); border: none; border-radius: 7px;">Follow</button>
+
+    <script>
+        const followBtn = document.getElementById("Followbtn");
+        let isFollowing = false;
+
+        followBtn.onclick = function () {
+            isFollowing = !isFollowing;
+
+            if (isFollowing) {
+                followBtn.textContent = "Unfollow";
+                followBtn.style.backgroundColor = "rgb(216, 46, 88)";
+            } else {
+                followBtn.textContent = "Follow";
+                followBtn.style.backgroundColor = "rgb(216, 46, 88)";
+            }
+        }
+    </script>
+</body>
+</html>
